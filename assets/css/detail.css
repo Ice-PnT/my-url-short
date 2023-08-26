@@ -1,0 +1,27 @@
+
+h3 {
+    text-align: center;
+    font-weight: 800;
+}
+
+p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.table th {
+    font-size: .8rem;
+    font-weight: 700;
+}
+.table th:nth-child(n+2) {
+    text-align: center;
+}
+.table td:nth-child(n+2) {
+    text-align: center;
+}
+
+.no-data {
+    font-size: 1.5rem;
+    color: #c3c6cb;
+    margin-top: 20vh;
+}

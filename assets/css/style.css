@@ -1,0 +1,156 @@
+:root{
+    --body:#f4f5f7;
+    --color-primary:#ec2c23;
+    --pnt-font-family: "Kodchasan", sans-serif;
+}
+
+body{
+    position: relative;
+    min-height: 100vh;
+    font-size: 16px;
+    overflow-x: hidden;
+    background-color: #f4f5f7;
+    font-family: var(--pnt-font-family);
+}
+
+a {
+    text-decoration: none;
+    color: #3a4bc8;
+}
+
+.icon-hover {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 5px;
+    margin: 0 10px;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.icon-hover:hover {
+    border: solid 2px #3a4bc8;
+    border-radius: 50%;
+}
+.icon-hover:active {
+    padding: 2px;
+    border-radius: 50%;
+}
+
+
+.container {
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+    background-color: white;
+    padding: 1rem 1rem;
+    width: 60%;
+    min-width: 500px;
+    border: none;
+    border-radius: .5rem;
+    
+}   
+
+.container h1 {
+    text-align: center;
+    font-weight: 800;
+}
+.container p {
+    margin: 0;
+    color: #7e7a7a;
+}
+.container p a {
+    text-decoration: none;
+    color: #0d6efd
+}
+
+.content-form {
+    padding: 1rem 5rem;
+}
+.content-form label {
+    font-size: .8rem;
+    font-weight: 700;
+}
+.content-form button {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.content-form button[disabled] {
+    background-color: #bdbdbd;
+    border: none;
+}
+
+.content-list {
+    margin-top: 20px;
+}
+
+.content-list .list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 430px;
+}
+.content-list .content-left {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+}
+.content-list .content-left .short-qr {
+    position: relative;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 4px;
+    margin-right: 5px;
+    height: 100%;
+}
+.content-list .content-left .short-qr img {
+    height: 100%;
+}
+
+.content-list .content-left .short-url {
+    min-width: 200px;
+    overflow-x: auto;
+}
+.content-list .content-left .short-url .url-new,
+.content-list .content-left .short-url .url-old {
+    display: flex;
+    align-items: center;
+}
+
+.content-list .content-left .short-url .url-new label,
+.content-list .content-left .short-url .url-old label {
+    font-size: 12px;
+    font-weight: 700;
+    margin-right: 2px;
+    white-space: nowrap;
+}
+
+.content-list .content-left .short-url .url-old p {
+    font-size: .8rem;
+    overflow: hidden;
+    width: 100%;
+    text-overflow: ellipsis;
+}
+
+.content-list .content-right .load-url {
+    display: grid;
+    padding: 10px;
+    white-space: nowrap;
+}
+.content-list .content-right .load-url label {
+    font-size: 10px;
+    font-weight: 800;
+}
+.content-list .content-right .load-url a {
+    font-size: 1rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+.badge-new {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 3px;
+}
